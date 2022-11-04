@@ -4,6 +4,25 @@ return {
 
   -- ["goolord/alpha-nvim"] = { disable = false } -- enables dashboard
 
+  -- Python syntax highlighting
+  -- https://jdhao.github.io/2021/07/11/from_vim_plug_to_packer/#issues-related-to-lazy-loaded-remote-plugins
+  ["numirias/semshi"] = {
+    ft = 'python',
+    config = 'vim.cmd [[UpdateRemotePlugins]]',
+  },
+
+  -- Trouble: A pretty list for showing diagnostics, references, ...
+  ["folke/trouble.nvim"] = {
+    config = function()
+      require "kyazdani42/nvim-web-devicons"
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  },
+
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
     config = function()

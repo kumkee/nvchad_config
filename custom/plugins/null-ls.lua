@@ -8,6 +8,17 @@ local b = null_ls.builtins
 
 local sources = {
 
+  -- python
+  b.formatting.autopep8,
+  b.formatting.blue,
+  b.diagnostics.pylint,
+  b.diagnostics.pylama,
+  b.diagnostics.pydocstyle,
+  -- b.diagnostics.pyproject_flake8,
+
+  -- elm
+  b.formatting.elm_format,
+
   -- webdev stuff
   b.formatting.deno_fmt,
   b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } },
@@ -21,7 +32,7 @@ local sources = {
 
   -- cpp
   b.formatting.clang_format,
-  b.formatting.rustfmt,
+  -- b.formatting.rustfmt,
 }
 
 null_ls.setup {

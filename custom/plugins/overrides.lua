@@ -8,6 +8,8 @@ M.treesitter = {
     "css",
     "typescript",
     "c",
+    "python",
+    "elm",
   },
 }
 
@@ -20,8 +22,24 @@ M.mason = {
     -- web dev stuff
     "css-lsp",
     "html-lsp",
-    "typescript-language-server",
-    "deno",
+    -- "typescript-language-server",
+    -- "deno",
+
+    -- shell
+    "shfmt",
+    "shellcheck",
+
+    -- elm
+    "elm-language-server",
+    "elm-format",
+
+    -- python
+    "pyright",
+    "autopep8",
+    "blue",
+    "pylint",
+    "pylama",
+    "pydocstyle",
   },
 }
 
