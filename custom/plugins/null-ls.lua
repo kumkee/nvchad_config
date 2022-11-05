@@ -14,6 +14,7 @@ local sources = {
   b.diagnostics.pylint,
   b.diagnostics.pylama,
   b.diagnostics.pydocstyle,
+  b.formatting.usort, -- required manual installation in .local/share/nvim/mason
   -- b.diagnostics.pyproject_flake8,
 
   -- elm
