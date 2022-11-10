@@ -9,13 +9,16 @@ local b = null_ls.builtins
 local sources = {
 
   -- python
-  b.formatting.autopep8,
+  -- b.formatting.autopep8,
   b.formatting.blue,
-  b.diagnostics.pylint,
-  b.diagnostics.pylama,
+  -- b.diagnostics.pylint,
+  b.diagnostics.pylama.with({
+    extra_args = {"--ignore", "E203"} -- "E203 doesn't work with blue/black"
+  }),
   b.diagnostics.pydocstyle,
   b.formatting.usort, -- required manual installation in .local/share/nvim/mason
   -- b.diagnostics.pyproject_flake8,
+  -- b.flake8,
 
   -- elm
   b.formatting.elm_format,
