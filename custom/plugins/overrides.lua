@@ -34,12 +34,11 @@ M.mason = {
     "elm-format",
 
     -- python
-    "pyright",
-    "autopep8",
     "blue",
+    "pydocstyle",
     "pylint",
     "pylama",
-    "pydocstyle",
+    "pyright",
   },
 }
 
