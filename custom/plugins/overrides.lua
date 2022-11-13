@@ -19,11 +19,14 @@ M.mason = {
     "lua-language-server",
     "stylua",
 
+    -- clang
+    "clang-format",
+
     -- web dev stuff
     "css-lsp",
+    "deno",
     "html-lsp",
     -- "typescript-language-server",
-    -- "deno",
 
     -- shell
     "shfmt",
