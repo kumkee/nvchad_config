@@ -20,7 +20,7 @@ for _, plugin in pairs(enable_providers) do
 end
 
 -- Specifying python3 provider
-vim.g.python3_host_prog = vim.env.HOME .. "/.local/share/nvim/pyenv/bin/python3"
+vim.g.python3_host_prog = vim.env.HOME .. "/.local/share/pynvim/bin/python"
 
 -- Disabling mouse
 vim.opt.clipboard = ""

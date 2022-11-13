@@ -12,10 +12,9 @@ return {
   },
 
   -- Trouble: A pretty list for showing diagnostics, references, ...
-  --[[
   ["folke/trouble.nvim"] = {
     config = function()
-      require "nvim-tree/nvim-web-devicons"
+      -- require "nvim-tree/nvim-web-devicons"
       require("trouble").setup {
         -- your configuration comes here
         -- or leave it empty to use the default settings
@@ -23,7 +22,6 @@ return {
       }
     end
   },
-  ]]
 
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
