@@ -27,6 +27,7 @@ pip install usort
 deactivate
 ln -s ~/.local/share/nvim/mason/packages/usort/venv/bin/usort ~/.local/share/nvim/mason/bin/
 ```
+`usort` is now available in Mason. The setup above is only for demo only.
 
 ## Update
 Under nvim, `<leader> + uu`.

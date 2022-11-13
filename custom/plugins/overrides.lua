@@ -42,6 +42,7 @@ M.mason = {
     "pylint",
     "pylama",
     "pyright",
+    "usort",
   },
 }
 
