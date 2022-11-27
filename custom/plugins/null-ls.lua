@@ -11,11 +11,13 @@ local sources = {
   -- python
   -- b.formatting.autopep8,
   b.formatting.blue,
-  b.formatting.usort, -- required manual installation in .local/share/nvim/mason
-  b.diagnostics.pydocstyle,
+  b.formatting.usort,
+  b.diagnostics.pydocstyle.with {
+    extra_args = { "--ignore=D203" }, -- "D203 doesn't work with blue/black"
+  },
   b.diagnostics.pylint,
   b.diagnostics.pylama.with {
-    extra_args = { "--ignore", "E203" }, -- "E203 doesn't work with blue/black"
+    extra_args = { "--ignore", "W503,E203" }, -- "E203 doesn't work with blue/black"
   },
   -- b.diagnostics.pyproject_flake8,
   -- b.flake8,
