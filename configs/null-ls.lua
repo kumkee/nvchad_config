@@ -17,6 +17,20 @@ local sources = {
 
   -- cpp
   b.formatting.clang_format,
+
+  -- elm
+  b.formatting.elm_format,
+
+  -- python
+  b.formatting.blue,
+  b.formatting.usort,
+  b.diagnostics.pydocstyle.with {
+    extra_args = { "--ignore=D203" }, -- "D203 doesn't work with blue/black"
+  },
+  b.diagnostics.pylint,
+  b.diagnostics.pylama.with {
+    extra_args = { "--ignore", "W503,E203" }, -- "E203 doesn't work with blue/black"
+  },
 }
 
 null_ls.setup {
