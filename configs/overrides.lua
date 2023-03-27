@@ -30,7 +30,23 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
-    "prettier"
+    "prettier",
+
+    -- shell
+    "shfmt",
+    "shellcheck",
+
+    -- elm
+    "elm-language-server",
+    "elm-format",
+
+    -- python
+    "blue",
+    "pydocstyle",
+    "pylint",
+    "pylama",
+    "pyright",
+    "usort",
   },
 }
 
