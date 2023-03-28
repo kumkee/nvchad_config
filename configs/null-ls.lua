@@ -27,7 +27,7 @@ local sources = {
   b.diagnostics.pydocstyle.with {
     extra_args = { "--ignore=D203" }, -- "D203 doesn't work with blue/black"
   },
-  b.diagnostics.pylint,
+  b.diagnostics.pylint, -- "pylint need to be installed in the venv to work"
   b.diagnostics.pylama.with {
     extra_args = { "--ignore", "W503,E203" }, -- "E203 doesn't work with blue/black"
   },
