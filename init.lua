@@ -18,3 +18,8 @@ for _, plugin in pairs(enable_providers) do
 end
 
 vim.g.python3_host_prog = vim.env.HOME .. "/.local/share/pynvim/bin/python"
+
+-- Disabling mouse
+vim.opt.clipboard = ""
+vim.g.loaded_clipboard_provider = "1"
+vim.opt.mouse = ""
