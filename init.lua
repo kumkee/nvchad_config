@@ -5,3 +5,16 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+--
+local enable_providers = {
+  "python3",
+}
+
+-- Enabling providers
+for _, plugin in pairs(enable_providers) do
+  local provider = plugin .. "_provider"
+  vim.g["loaded_" .. provider] = nil
+  vim.cmd("runtime " .. provider)
+end
+
+vim.g.python3_host_prog = vim.env.HOME .. "/.local/share/pynvim/bin/python"
