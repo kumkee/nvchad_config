@@ -61,6 +61,19 @@ local plugins = {
     end,
   },
 
+  -- Python syntax highlighting
+  -- https://jdhao.github.io/2021/07/11/from_vim_plug_to_packer/#issues-related-to-lazy-loaded-remote-plugins
+  --[=====[
+  {
+    "numirias/semshi",
+    ft = 'python',
+    config = function()
+      vim.cmd [[UpdateRemotePlugins]]
+    end,
+  }
+  --]=====]
+
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
