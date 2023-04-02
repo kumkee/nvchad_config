@@ -65,15 +65,17 @@ local plugins = {
   -- https://jdhao.github.io/2021/07/11/from_vim_plug_to_packer/#issues-related-to-lazy-loaded-remote-plugins
   {
     "numirias/semshi",
-    ft = 'python',
+    ft = "python",
     config = function()
       vim.cmd [[
       runtime plugin/rplugin.vim
       UpdateRemotePlugins
       ]]
     end,
-  }
+  },
 
+  -- F# syntax
+  { "ionide/Ionide-vim", ft = "fsharp" },
 
   -- To make a plugin not be loaded
   -- {
