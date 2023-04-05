@@ -31,6 +31,9 @@ local sources = {
   b.diagnostics.pylama.with {
     extra_args = { "--ignore", "W503,E203" }, -- "E203 doesn't work with blue/black"
   },
+
+  -- fsharp
+  b.formatting.fantomas,
 }
 
 null_ls.setup {
