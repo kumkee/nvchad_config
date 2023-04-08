@@ -54,6 +54,13 @@ M.mason = {
     "pylama",
     "pyright",
     "usort",
+
+    -- fsharp
+    "fsautocomplete",
+    "fantomas",
+
+    -- xml
+    "lemminx",
   },
 }
 
