@@ -4,7 +4,9 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd", "elmls", "pyright", "fsautocomplete", "lemminx" }
+-- lemminx: xml
+-- nxls: json
+local servers = { "html", "cssls", "tsserver", "clangd", "elmls", "pyright", "fsautocomplete", "lemminx", "nxls" }
 -- Note: elmls need to run under node@16
 -- `brew unlink node`
 -- `brew link node@16`
