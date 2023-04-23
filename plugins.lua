@@ -75,9 +75,24 @@ local plugins = {
   },
 
   -- F# syntax
-  -- { "ionide/Ionide-vim", ft = "fsharp" },
+  { "ionide/Ionide-vim", ft = "fsharp" },
 
   { "adelarsq/neofsharp.vim", ft = "fsharp" },
+
+  -- APL
+  { "PyGamer0/vim-apl", ft = "apl" },
+
+  {
+    "baruchel/vim-notebook",
+    cmd = {
+      "NotebookStart",
+      "NotebookEvaluate",
+      "NotebookEvaluateAll",
+      "NotebookStop",
+      "NotebookClose",
+      "NotebookRestart",
+    },
+  },
 
   -- To make a plugin not be loaded
   -- {
