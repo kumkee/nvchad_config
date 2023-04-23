@@ -84,6 +84,9 @@ local plugins = {
   --   "NvChad/nvim-colorizer.lua",
   --   enabled = false
   -- },
+
+  -- To use a extras plugin
+  -- { import = "custom.configs.extras.symbols-outline", },
 }
 
 return plugins
