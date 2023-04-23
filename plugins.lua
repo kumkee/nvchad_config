@@ -54,6 +54,7 @@ local plugins = {
   -- },
 
   -- To use a extras plugin
+  -- { import = "custom.configs.extras.symbols-outline", },
   { import = "custom.configs.extras.trouble", },
 }
 
