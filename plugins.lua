@@ -1,4 +1,4 @@
-local overrides = require "custom.configs.overrides"
+local overrides = require("custom.configs.overrides")
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason,
+    opts = overrides.mason
   },
 
   {
@@ -46,38 +46,6 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
-
-  -- Trouble: A pretty list for showing diagnostics, references, ...
-  {
-    "folke/trouble.nvim",
-    cmd = { "Trouble" },
-    config = function()
-      -- require "nvim-tree/nvim-web-devicons"
-      require("trouble").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end,
-  },
-
-  -- Python syntax highlighting
-  -- https://jdhao.github.io/2021/07/11/from_vim_plug_to_packer/#issues-related-to-lazy-loaded-remote-plugins
-  {
-    "numirias/semshi",
-    ft = "python",
-    config = function()
-      vim.cmd [[
-      runtime plugin/rplugin.vim
-      UpdateRemotePlugins
-      ]]
-    end,
-  },
-
-  -- F# syntax
-  -- { "ionide/Ionide-vim", ft = "fsharp" },
-
-  { "adelarsq/neofsharp.vim", ft = "fsharp" },
 
   -- To make a plugin not be loaded
   -- {
