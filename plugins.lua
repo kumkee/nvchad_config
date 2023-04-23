@@ -84,14 +84,6 @@ local plugins = {
 
   {
     "baruchel/vim-notebook",
-    cmd = {
-      "NotebookStart",
-      "NotebookEvaluate",
-      "NotebookEvaluateAll",
-      "NotebookStop",
-      "NotebookClose",
-      "NotebookRestart",
-    },
   },
 
   -- To make a plugin not be loaded
