@@ -82,15 +82,6 @@ local plugins = {
   -- APL
   { "PyGamer0/vim-apl", ft = "apl" },
 
-  {
-    "baruchel/vim-notebook",
-  },
-
-  -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
 }
 
 return plugins
