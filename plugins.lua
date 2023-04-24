@@ -75,7 +75,7 @@ local plugins = {
   },
 
   -- F# syntax
-  { "ionide/Ionide-vim", ft = "fsharp" },
+  -- { "ionide/Ionide-vim", ft = "fsharp" },
 
   { "adelarsq/neofsharp.vim", ft = "fsharp" },
 
