@@ -23,3 +23,8 @@ vim.g.python3_host_prog = vim.env.HOME .. "/.local/share/pynvim/bin/python"
 vim.opt.clipboard = ""
 -- vim.g.loaded_clipboard_provider = "1"
 vim.opt.mouse = ""
+
+-- code folding with treesitter
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 99
