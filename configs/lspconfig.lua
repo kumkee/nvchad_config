@@ -19,9 +19,6 @@ local servers = {
   "csharp_ls",
   "ltex",
 }
--- Note: elmls need to run under node@16
--- `brew unlink node`
--- `brew link node@16`
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
