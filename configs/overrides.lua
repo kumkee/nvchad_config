@@ -38,6 +38,9 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
+    "standardjs",
+    "standardts",
+    "markuplint",
 
     -- shell
     "shfmt",
@@ -61,6 +64,7 @@ M.mason = {
 
     -- xml
     "lemminx",
+    "xmlformat",
 
     -- c/cpp stuff
     "clangd",
