@@ -39,7 +39,7 @@ M.mason = {
     "deno",
     "prettier",
     "standardjs",
-    "standardts",
+    "ts-standard",
     "markuplint",
 
     -- shell
