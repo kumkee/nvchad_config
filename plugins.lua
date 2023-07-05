@@ -82,6 +82,8 @@ local plugins = {
   -- APL
   { "PyGamer0/vim-apl", ft = "apl" },
 
+  -- vim sessions
+  { "tpope/vim-obsession", lazy = false },
 }
 
 return plugins
