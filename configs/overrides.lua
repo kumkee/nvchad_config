@@ -64,7 +64,7 @@ M.mason = {
 
     -- xml
     "lemminx",
-    "xmlformat",
+    "xmlformatter",
 
     -- c/cpp stuff
     "clangd",
