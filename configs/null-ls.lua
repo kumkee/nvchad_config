@@ -19,7 +19,9 @@ local sources = {
 	b.formatting.xmlformat,
 
 	-- Lua
-	b.formatting.stylua,
+	b.formatting.stylua.with({
+    extra_args = { "--config-path=$HOME/.config/nvim/lua/custom/configs/stylua.toml" },
+  }),
 
 	-- cpp
 	b.formatting.clang_format,
