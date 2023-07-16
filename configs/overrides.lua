@@ -67,7 +67,7 @@ M.mason = {
     "xmlformatter",
 
     -- text, markdown, latex
-    -- "ltex-ls",
+    "ltex-ls",
 
     -- c/cpp stuff
     "clangd",
