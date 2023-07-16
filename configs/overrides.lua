@@ -1,91 +1,94 @@
 local M = {}
 
 M.treesitter = {
-  ensure_installed = {
-    "vim",
-    "lua",
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "tsx",
-    "c",
-    "markdown",
-    "markdown_inline",
-    "python",
-    "elm",
-  },
-  indent = {
-    enable = true,
-    -- disable = {
-    --   "python"
-    -- },
-  },
+	ensure_installed = {
+		"vim",
+		"lua",
+		"html",
+		"css",
+		"javascript",
+		"typescript",
+		"tsx",
+		"c",
+		"markdown",
+		"markdown_inline",
+		"python",
+		"elm",
+	},
+	indent = {
+		enable = true,
+		-- disable = {
+		--   "python"
+		-- },
+	},
 }
 
 M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
+	ensure_installed = {
+		-- lua stuff
+		"lua-language-server",
+		"stylua",
 
-    -- clang
-    "clang-format",
+		-- clang
+		"clang-format",
 
-    -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "prettier",
-    "standardjs",
-    "ts-standard",
-    "markuplint",
+		-- web dev stuff
+		"css-lsp",
+		"html-lsp",
+		"typescript-language-server",
+		"deno",
+		"prettier",
+		"standardjs",
+		"ts-standard",
+		"markuplint",
 
-    -- shell
-    "shfmt",
-    "shellcheck",
+		-- shell
+		"shfmt",
+		"shellcheck",
 
-    -- elm
-    "elm-language-server",
-    "elm-format",
+		-- elm
+		"elm-language-server",
+		"elm-format",
 
-    -- python
-    "blue",
-    "pydocstyle",
-    "pylint",
-    "pylama",
-    "pyright",
-    "usort",
+		-- python
+		"blue",
+		"pydocstyle",
+		"pylint",
+		"pylama",
+		"pyright",
+		"usort",
 
-    -- fsharp
-    "fsautocomplete",
-    "fantomas",
+		-- fsharp
+		"fsautocomplete",
+		"fantomas",
 
-    -- xml
-    "lemminx",
-    "xmlformatter",
+		-- xml
+		"lemminx",
+		"xmlformatter",
 
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
-  },
+		-- text, markdown, latex
+		"ltex-ls",
+
+		-- c/cpp stuff
+		"clangd",
+		"clang-format",
+	},
 }
 
 -- git support in nvimtree
 M.nvimtree = {
-  git = {
-    enable = true,
-  },
+	git = {
+		enable = true,
+	},
 
-  renderer = {
-    highlight_git = true,
-    icons = {
-      show = {
-        git = true,
-      },
-    },
-  },
+	renderer = {
+		highlight_git = true,
+		icons = {
+			show = {
+				git = true,
+			},
+		},
+	},
 }
 
 return M
