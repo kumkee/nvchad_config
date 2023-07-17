@@ -66,6 +66,9 @@ M.mason = {
     "lemminx",
     "xmlformatter",
 
+    -- json
+    "json-lsp",
+
     -- text, markdown, latex
     "ltex-ls",
 

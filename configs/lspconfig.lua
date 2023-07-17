@@ -14,11 +14,11 @@ local servers = {
   "elmls",
   "pyright",
   "fsautocomplete",
-  "lemminx",
-  "nxls",
+  "lemminx", -- xml
+  "jsonls", -- json
   "csharp_ls",
   "ltex",
-  "nil_ls",
+  "nil_ls", -- nix
 }
 
 for _, lsp in ipairs(servers) do
