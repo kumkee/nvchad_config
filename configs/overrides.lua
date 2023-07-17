@@ -14,6 +14,7 @@ M.treesitter = {
     "markdown_inline",
     "python",
     "elm",
+    "nix",
   },
   indent = {
     enable = true,
@@ -69,8 +70,9 @@ M.mason = {
     -- json
     "json-lsp",
 
-    -- text, markdown, latex
-    "ltex-ls",
+    -- text, markdown
+    "vale",
+    "vale-ls",
 
     -- c/cpp stuff
     "clangd",

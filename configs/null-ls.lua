@@ -45,6 +45,9 @@ local sources = {
 
   -- nix
   b.formatting.alejandra,
+
+  -- markdown, text
+  -- b.diagnostics.vale
 }
 
 null_ls.setup({
