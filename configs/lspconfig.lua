@@ -13,11 +13,11 @@ local servers = {
   "clangd",
   "elmls",
   "pyright",
-  "fsautocomplete",
+  "fsautocomplete", -- f#
   "lemminx", -- xml
   "jsonls", -- json
   "csharp_ls",
-  "vale_ls", -- need to initialise with `~/.local/.../bin/vale sync`
+  "vale_ls", -- md/txt -- need to initialise with `~/.local/.../bin/vale sync`
   "nil_ls", -- nix
 }
 
