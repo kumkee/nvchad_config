@@ -39,8 +39,6 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
-    "standardjs",
-    "ts-standard",
     "markuplint",
 
     -- shell
