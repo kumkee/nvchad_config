@@ -9,7 +9,9 @@ local b = null_ls.builtins
 local sources = {
 
   -- webdev stuff
-  b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
+  b.formatting.deno_fmt.with({
+    extra_args = { "--no-semicolons", "--single-quote" },
+  }), -- choosed deno for ts/js files cuz its very fast!
   b.diagnostics.markuplint, -- html linter
   b.formatting.prettier.with({ filetypes = { "html", "markdown", "css", "json" } }), -- so prettier works only on these filetypes
 
