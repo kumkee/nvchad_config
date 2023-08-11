@@ -70,6 +70,7 @@ M.mason = {
 
     -- yaml
     "yamlls",
+    "yamllint",
 
     -- text, markdown
     "vale",

@@ -17,6 +17,8 @@ local sources = {
 
   b.formatting.xmlformat,
 
+  b.diagnostics.yamllint,
+
   -- Lua
   b.formatting.stylua.with({
     extra_args = { "--config-path=" .. vim.env.HOME .. "/.stylua.toml" },
