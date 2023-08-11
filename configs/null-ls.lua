@@ -13,7 +13,7 @@ local sources = {
     extra_args = { "--no-semicolons", "--single-quote" },
   }), -- choosed deno for ts/js files cuz its very fast!
   b.diagnostics.markuplint, -- html linter
-  b.formatting.prettier.with({ filetypes = { "html", "markdown", "css", "json" } }), -- so prettier works only on these filetypes
+  b.formatting.prettier.with({ filetypes = { "html", "markdown", "css", "json", "yaml" } }), -- so prettier works only on these filetypes
 
   b.formatting.xmlformat,
 

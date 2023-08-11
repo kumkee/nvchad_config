@@ -68,6 +68,9 @@ M.mason = {
     -- json
     "json-lsp",
 
+    -- yaml
+    "yamlls",
+
     -- text, markdown
     "vale",
     "vale-ls",

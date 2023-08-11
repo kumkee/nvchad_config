@@ -19,6 +19,7 @@ local servers = {
   "csharp_ls",
   "vale_ls", -- md/txt -- need to initialise with `~/.local/.../bin/vale sync`
   "nil_ls", -- nix
+  "yamlls", -- yaml
 }
 
 for _, lsp in ipairs(servers) do
