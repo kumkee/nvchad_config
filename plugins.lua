@@ -1,4 +1,4 @@
-local overrides = require "custom.configs.overrides"
+local overrides = require("custom.configs.overrides")
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -12,13 +12,13 @@ local plugins = {
       {
         "jose-elias-alvarez/null-ls.nvim",
         config = function()
-          require "custom.configs.null-ls"
+          require("custom.configs.null-ls")
         end,
       },
     },
     config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
+      require("plugins.configs.lspconfig")
+      require("custom.configs.lspconfig")
     end, -- Override to setup mason-lspconfig
   },
 
@@ -53,11 +53,10 @@ local plugins = {
     cmd = { "Trouble" },
     config = function()
       -- require "nvim-tree/nvim-web-devicons"
-      require("trouble").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
+      require("trouble")
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
     end,
   },
 
@@ -67,10 +66,10 @@ local plugins = {
     "numirias/semshi",
     ft = "python",
     config = function()
-      vim.cmd [[
+      vim.cmd([[
       runtime plugin/rplugin.vim
       UpdateRemotePlugins
-      ]]
+      ]])
     end,
   },
 
@@ -84,6 +83,16 @@ local plugins = {
 
   -- vim sessions
   { "tpope/vim-obsession", lazy = false },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  },
 }
 
 return plugins
