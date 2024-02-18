@@ -11,7 +11,9 @@ local options = {
 
 		sh = { "shfmt" },
 
-    elm = { "elm_format"},
+    elm = { "elm_format" },
+
+    nix = { "alejandra" },
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
