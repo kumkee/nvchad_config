@@ -14,6 +14,8 @@ local options = {
     elm = { "elm_format" },
 
     nix = { "alejandra" },
+
+    fsharp = { "fantomas" },
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
