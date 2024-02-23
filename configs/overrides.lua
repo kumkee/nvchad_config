@@ -59,7 +59,7 @@ M.mason = {
     "usort",
 
     -- fsharp
-    --"fsautocomplete",
+    "fsautocomplete",
     "fantomas",
 
     -- xml
