@@ -18,6 +18,8 @@ local options = {
     fsharp = { "fantomas" },
 
     markdown = { "mdformat" },
+
+    xml = { "xmlformat" },
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
