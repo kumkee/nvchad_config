@@ -18,7 +18,7 @@ local servers = {
   "jsonls", -- json
   "csharp_ls",
   -- "vale_ls", -- md/txt -- need to initialise with `~/.local/.../bin/vale sync`
-  -- "ltex", -- md, latex, and more
+  -- "ltex", -- added below in a separate section
   "nil_ls", -- nix
   "yamlls", -- yaml
 }
@@ -30,6 +30,7 @@ for _, lsp in ipairs(servers) do
   })
 end
 
+-- ltex: special treatment - md, latex, and more
 lspconfig["ltex"].setup({
   on_attach = on_attach,
   capabilities = capabilities,

@@ -63,7 +63,7 @@ M.mason = {
     "fantomas",
 
     -- xml
-    "lemminx",
+    -- "lemminx",
     "xmlformatter",
 
     -- json
