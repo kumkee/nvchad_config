@@ -74,8 +74,9 @@ M.mason = {
     "yamllint",
 
     -- text, markdown
-    "vale",
-    "vale-ls",
+    "ltex-ls",
+    -- "vale",
+    -- "vale-ls",
 
     -- c/cpp stuff
     "clangd",

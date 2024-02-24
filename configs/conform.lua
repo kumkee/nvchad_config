@@ -16,6 +16,8 @@ local options = {
     nix = { "alejandra" },
 
     fsharp = { "fantomas" },
+
+    markdown = { "mdformat" },
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
