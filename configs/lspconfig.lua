@@ -18,7 +18,7 @@ local servers = {
   "jsonls", -- json
   "csharp_ls",
   -- "vale_ls", -- md/txt -- need to initialise with `~/.local/.../bin/vale sync`
-  "ltex", -- md, latex, and more
+  -- "ltex", -- md, latex, and more
   "nil_ls", -- nix
   "yamlls", -- yaml
 }
@@ -29,6 +29,16 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   })
 end
+
+lspconfig["ltex"].setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    ltex = {
+      language = "en-GB",
+    },
+  },
+})
 
 --
 -- lspconfig.pyright.setup { blabla}
