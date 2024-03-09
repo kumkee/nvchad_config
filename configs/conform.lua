@@ -20,6 +20,8 @@ local options = {
     markdown = { "mdformat" },
 
     xml = { "xmlformat" },
+
+    typescript = { "deno_fmt" },
 	},
 
   -- adding same formatter for multiple filetypes can look too much work for some
