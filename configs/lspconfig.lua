@@ -17,6 +17,7 @@ local servers = {
   "lemminx", -- xml
   "jsonls", -- json
   "csharp_ls",
+  "hls", -- Haskell
   -- "vale_ls", -- md/txt -- need to initialise with `~/.local/.../bin/vale sync`
   -- "ltex", -- added below in a separate section
   "nil_ls", -- nix

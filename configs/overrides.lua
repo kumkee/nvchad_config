@@ -16,6 +16,7 @@ M.treesitter = {
     "elm",
     "nix",
     "vimdoc",
+    "haskell",
   },
   indent = {
     enable = true,
